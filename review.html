@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Page</title>
+    <link rel="stylesheet" href="review.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpg" alt="">
+                <a href="index.html" id="logoText">Bean & Blossom</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="menu.html">Cafe Menu</a></li>
+                
+                <li><a href="https://www.linkedin.com/in/manav-jaiswal-53201128b/" href="javascript:void(0);" onclick="composeEmail()">Contact</a></li>
+                <a id="googleSignInBtn" href="review.html">Reviews</a>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <img src="website-dropdown-arrow-icon-on-600nw-2075355202.jpg" alt="">
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Submit Your Review</h2>
+        <form id="reviewForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="review">Review:</label>
+            <textarea id="review" name="review" required></textarea>
+
+            <input type="submit" value="Submit Review">
+        </form>
+        <div id="reviews">
+            <h3>Reviews:</h3>
+            <ul id="reviewList"></ul>
+        </div>
+    </div>
+    <script src="review.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
